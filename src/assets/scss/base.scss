@@ -1,0 +1,39 @@
+.container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 50px;
+}
+
+.nav {
+        &__search {
+                input {
+                        outline: none;
+                        border-bottom: 1px solid var(--secondary-color);
+                }
+        }
+
+        &__langs {
+                li {
+                        transition: 0.3s;
+                        &:hover {
+                                cursor: pointer;
+                                color: var(--tomato-color);
+                        }
+                }
+
+                li.active {
+                        color: var(--tomato-color);
+                        position: relative;
+
+                        &::after {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                height: 2px;
+                                background-color: var(--tomato-color);
+                                left: 0;
+                                bottom: -22px;
+                        }
+                }
+        }
+}

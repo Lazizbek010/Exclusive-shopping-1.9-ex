@@ -1,0 +1,17 @@
+:root{
+        --white-color: #fff;
+        --black-color: #000;
+        --primary-color: #254A5A;
+        --secondary-color: #0F303F;
+        --tomato-color: #E64926;
+        --light-color: #EAE9E8;
+        --grey-color: #CEC6C4;
+        --dark-color: #B7C1C5;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('./base.scss');
